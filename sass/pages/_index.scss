@@ -1,0 +1,21 @@
+html {
+    @media (min-width: $screen-xl) {
+        @include rem(font-size, 16px);
+    }
+
+    @media (min-width: $screen-lg) and (max-width: $max-screen-lg) {
+        @include rem(font-size, 15px);
+    }
+
+    @media (min-width: $screen-md) and (max-width: $max-screen-md) {
+        @include rem(font-size, 14px);
+    }
+
+    @media (min-width: $screen-sm) and (max-width: $max-screen-sm) {
+        @include rem(font-size, 13px);
+    }
+
+    @media (max-width: $max-screen-xs) {
+        @include rem(font-size, 12px);
+    }
+}

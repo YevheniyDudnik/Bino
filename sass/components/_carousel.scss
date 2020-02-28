@@ -1,0 +1,65 @@
+.header-carousel {
+    position: relative;
+    z-index: 2;
+    overflow-x: hidden;
+
+    &::before {
+        @include rem(border-width, 124px 0 0 960px);
+
+        right: 50%;
+        border-color: transparent transparent transparent $bg-c-body;
+    }
+
+    &::after {
+        @include rem(border-width, 0 0 124px 960px);
+
+        left: 50%;
+        border-color: transparent transparent $bg-c-body transparent;
+    }
+
+    &::before, &::after {
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+        display: inline-block;
+        width: 50%;
+        height: 0;
+        content: "";
+        border-style: solid;
+    }
+
+    & > .slick {
+        &-arrow {
+            @include rem(font-size, 21px);
+
+            position: absolute;
+            top: 47%;
+            z-index: 99;
+            max-width: 45px;
+            max-height: 45px;
+            color: $c-header-carousel-arrows;
+            cursor: pointer;
+            background-color: $bg-c-header-carousel-arrows;
+            opacity: 0.25;
+            transition: 0.5s linear;
+
+            &:hover {
+                color: $c-header-carousel-arrows-hover;
+                background-color: $bg-c-header-carousel-arrows-hover;
+                opacity: 1;
+            }
+        }
+
+        &-prev {
+            @include rem(padding, 13px 18px 11px 17px);
+
+            left: 3%;
+        }
+
+        &-next {
+            @include rem(padding, 13px 17px 11px 18px);
+
+            right: 3%;
+        }
+    }
+}

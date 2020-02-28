@@ -1,0 +1,71 @@
+button, button:hover, button:active, button:focus {
+    outline: none;
+}
+
+.btn {
+    &-active {
+        // @include rem((
+        //     padding-right: 45px,
+        //     padding-left: 45.7px
+        // ));
+
+        background-color: $bg-c-btn-active;
+        border: 1px solid transparent;
+    }
+
+    &-outline {
+        // @include rem((
+        //     padding-right: 65.7px,
+        //     padding-left: 65px
+        // ));
+
+        border: 1px solid $b-c-btn-outline;
+    }
+
+    &-active, &-outline {
+        @include rem((
+            padding-top: 22px,
+            padding-bottom: 18px,
+            border-radius: 3px,
+            width: 225px,
+            height: 56px
+        ));
+
+        text-align: center;
+        transition: 0.5s linear;
+
+        &:hover {
+            color: $c-btn-active-hover;
+            background-color: $bg-c-btn-active-hover;
+            border: 1px solid transparent;
+            box-shadow: 0 2px 5px 1px $black-and-opacity-25;
+        }
+    }
+
+    &-circle {
+        @include rem(padding, 5px);
+
+        width: max-content;
+        max-width: 74px;
+        height: max-content;
+        max-height: 74px;
+        background-color: $white-and-opacity-25;
+        transition: 0.5s linear;
+
+        &:hover {
+            background-color: $bg-c-btn-circle;
+        }
+
+        & > .rounded-circle {
+            @include rem((
+                font-size: 31px,
+                padding: 17px 15px 16px 14px
+            ));
+
+            max-width: 64px;
+            max-height: 64px;
+            color: $c-btn-circle;
+            background-color: $bg-c-btn-circle;
+        }
+    }
+}

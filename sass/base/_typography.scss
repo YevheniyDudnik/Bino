@@ -1,0 +1,130 @@
+body {
+    overflow-x: hidden;
+    font-family: $main-font;
+    color: $c-body;
+    background-color: $bg-c-body;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 auto;
+    line-height: 1;
+}
+
+h1 {
+    @include rem((
+        font-size: 72px,
+        letter-spacing: 7.2px
+    ));
+
+    font-family: $main-font-bold;
+    color: $c-h1;
+}
+
+h2 {
+    @include rem((
+        font-size: 36px,
+        letter-spacing: 3.6px
+    ));
+
+    font-family: $second-font-bold;
+    color: $c-h2;
+}
+
+h3 {
+    @include rem((
+        font-size: 24px,
+        letter-spacing: 1.2px
+    ));
+
+    font-family: $second-font;
+    color: $c-h3;
+}
+
+h4 {
+    @include rem((
+        font-size: 18px,
+        line-height: 30px
+    ));
+
+    font-family: $second-font;
+    color: $c-h4;
+}
+
+h5 {
+    @include rem((
+        font-size: 18px,
+        letter-spacing: 1.35px
+    ));
+
+    font-family: $main-font-semibold;
+    color: $c-h5;
+}
+
+h6 {
+    @include rem((
+        font-size: 14px,
+        line-height: 24px
+    ));
+
+    font-family: $main-font;
+    color: $c-h6;
+}
+
+p {
+    @include rem((
+        font-size: 12px,
+        line-height: 20px,
+        letter-spacing: 0.9px
+    ));
+
+    font-family: $second-font;
+    color: $c-p;
+}
+
+a {
+    @include rem((
+        font-size: 14px,
+        letter-spacing: 0.12px
+    ));
+
+    font-family: $main-font-bold;
+    color: $c-a;
+    text-decoration: none;
+
+    &[href^="tel"], &[href^="fax"], &[href^="mailto"] {
+        pointer-events: none;
+        cursor: default;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+span {
+    background-color: $bg-c-span;
+}
+
+hr {
+    width: 100%;
+    border-bottom: 1px solid $b-c-hr;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &-fluid {
+        max-width: 1920px;
+    }
+}

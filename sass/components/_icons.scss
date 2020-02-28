@@ -1,0 +1,76 @@
+.wrap-icons {
+    max-width: 72px;
+    max-height: 72px;
+    background-color: transparent;
+
+    & > i {
+        @include rem((
+            padding-top: 30px,
+            padding-bottom: 26px
+        ));
+
+        position: relative;
+        max-width: 72px;
+        max-height: 72px;
+        margin: 0 auto;
+        color: $c-icons;
+
+        &.fa {
+            &-glasses {
+                @include rem((
+                    padding-right: 27px,
+                    padding-left: 27px
+                ));
+            }
+
+            &-heart {
+                @include rem((
+                    padding-right: 28px,
+                    padding-left: 28px
+                ));
+            }
+
+            &-lightbulb {
+                @include rem((
+                    padding-right: 30px,
+                    padding-left: 31px
+                ));
+            }
+
+            &-comments {
+                @include rem((
+                    padding-right: 27px,
+                    padding-left: 27px
+                ));
+            }
+        }
+
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: '';
+            border: 1px solid $b-c-icons;
+            transition: 0.5s linear;
+        }
+    }
+}
+
+li {
+    &:hover {
+        & > .wrap-icons {
+            & > i {
+                &::after {
+                    border-color: $b-c-icons-hover;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
+        & > .icons-title {
+            color: $c-icons-title-hover;
+        }
+    }
+}

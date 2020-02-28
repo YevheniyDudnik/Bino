@@ -1,0 +1,49 @@
+.icons {
+    &-title {
+        @include rem(padding-top, 30px);
+
+        position: relative;
+        max-width: 156px;
+        transition: 0.5s linear;
+
+        &::after {
+            @include rem((
+                bottom: -19px,
+                width: 41px
+            ));
+
+            position: absolute;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            content: '';
+            border-bottom: 2px solid $b-c-icons-title-pseudo-element;
+        }
+    }
+
+    &-text {
+        @include rem(padding-top, 38px);
+
+        max-width: 258px;
+    }
+}
+
+.section-first {
+    &-wrap {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            content: '';
+            border-bottom: 1px solid $b-c-hr;
+        }
+    }
+
+    & > li {
+        @include rem(padding, 0 15px 30px);
+
+        margin: 0 auto;
+    }
+}

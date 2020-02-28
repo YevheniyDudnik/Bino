@@ -1,0 +1,128 @@
+/* -- Lato -- */
+@font-face {
+    font-family: 'lato-bold-italic';
+    src: url('../fonts/lato/lato-bolditalic-webfont.eot');
+    src: url('../fonts/lato/lato-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lato/lato-bolditalic-webfont.woff2') format('woff2'),
+        url('../fonts/lato/lato-bolditalic-webfont.woff') format('woff'),
+        url('../fonts/lato/lato-bolditalic-webfont.ttf') format('truetype'),
+        url('../fonts/lato/lato-bolditalic-webfont.svg#lato-bold-italic') format('svg');
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'lato-italic';
+    src: url('../fonts/lato/lato-italic-webfont.eot');
+    src: url('../fonts/lato/lato-italic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lato/lato-italic-webfont.woff2') format('woff2'),
+        url('../fonts/lato/lato-italic-webfont.woff') format('woff'),
+        url('../fonts/lato/lato-italic-webfont.ttf') format('truetype'),
+        url('../fonts/lato/lato-italic-webfont.svg#lato-italic') format('svg');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'lato-regular';
+    src: url('../fonts/lato/lato-regular-webfont.eot');
+    src: url('../fonts/lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lato/lato-regular-webfont.woff2') format('woff2'),
+        url('../fonts/lato/lato-regular-webfont.woff') format('woff'),
+        url('../fonts/lato/lato-regular-webfont.ttf') format('truetype'),
+        url('../fonts/lato/lato-regular-webfont.svg#lato-regular') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* -- / Lato / -- */
+
+/* -- Open Sans -- */
+@font-face {
+    font-family: 'open-sans-bold';
+    src: url('../fonts/open-sans/opensans-bold-webfont.eot');
+    src: url('../fonts/open-sans/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/open-sans/opensans-bold-webfont.woff2') format('woff2'),
+        url('../fonts/open-sans/opensans-bold-webfont.woff') format('woff'),
+        url('../fonts/open-sans/opensans-bold-webfont.ttf') format('truetype'),
+        url('../fonts/open-sans/opensans-bold-webfont.svg#open-sans-bold') format('svg');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'open-sans-bold-italic';
+    src: url('../fonts/open-sans/opensans-bolditalic-webfont.eot');
+    src: url('../fonts/open-sans/opensans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/open-sans/opensans-bolditalic-webfont.woff2') format('woff2'),
+        url('../fonts/open-sans/opensans-bolditalic-webfont.woff') format('woff'),
+        url('../fonts/open-sans/opensans-bolditalic-webfont.ttf') format('truetype'),
+        url('../fonts/open-sans/opensans-bolditalic-webfont.svg#open-sans-bold-italic') format('svg');
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'open-sans-regular';
+    src: url('../fonts/open-sans/opensans-regular-webfont.eot');
+    src: url('../fonts/open-sans/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
+        url('../fonts/open-sans/opensans-regular-webfont.woff') format('woff'),
+        url('../fonts/open-sans/opensans-regular-webfont.ttf') format('truetype'),
+        url('../fonts/open-sans/opensans-regular-webfont.svg#open-sans-regular') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'open-sans-semibold';
+    src: url('../fonts/open-sans/opensans-semibold-webfont.eot');
+    src: url('../fonts/open-sans/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/open-sans/opensans-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/open-sans/opensans-semibold-webfont.woff') format('woff'),
+        url('../fonts/open-sans/opensans-semibold-webfont.ttf') format('truetype'),
+        url('../fonts/open-sans/opensans-semibold-webfont.svg#open-sans-semibold') format('svg');
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* -- / Open Sans / -- */
+
+/* -- Source Sans Pro -- */
+@font-face {
+    font-family: 'source-sans-pro-bold';
+    src: url('../fonts/source-sans-pro/sourcesanspro-bold-webfont.eot');
+    src: url('../fonts/source-sans-pro/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/source-sans-pro/sourcesanspro-bold-webfont.woff2') format('woff2'),
+        url('../fonts/source-sans-pro/sourcesanspro-bold-webfont.woff') format('woff'),
+        url('../fonts/source-sans-pro/sourcesanspro-bold-webfont.ttf') format('truetype'),
+        url('../fonts/source-sans-pro/sourcesanspro-bold-webfont.svg#source-sans-pro-bold') format('svg');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'source-sans-pro-regular';
+    src: url('../fonts/source-sans-pro/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/source-sans-pro/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/source-sans-pro/sourcesanspro-regular-webfont.woff2') format('woff2'),
+        url('../fonts/source-sans-pro/sourcesanspro-regular-webfont.woff') format('woff'),
+        url('../fonts/source-sans-pro/sourcesanspro-regular-webfont.ttf') format('truetype'),
+        url('../fonts/source-sans-pro/sourcesanspro-regular-webfont.svg#source-sans-pro-regular') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'source-sans-pro-semibold';
+    src: url('../fonts/source-sans-pro/sourcesanspro-semibold-webfont.eot');
+    src: url('../fonts/source-sans-pro/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/source-sans-pro/sourcesanspro-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/source-sans-pro/sourcesanspro-semibold-webfont.woff') format('woff'),
+        url('../fonts/source-sans-pro/sourcesanspro-semibold-webfont.ttf') format('truetype'),
+        url('../fonts/source-sans-pro/sourcesanspro-semibold-webfont.svg#source-sans-pro-semibold') format('svg');
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* -- / Source Sans Pro / -- */

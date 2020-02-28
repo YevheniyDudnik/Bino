@@ -1,0 +1,5 @@
+sass/bootstrap.scss
+sass/font-awesome.scss
+sass/slick.scss
+sass/abstracts/_rem.scss
+sass/base/_normalize&reset.scss

@@ -1,0 +1,9 @@
+main {
+    @include rem(padding-top, 115px);
+
+    .section {
+        &-first-wrap {
+            @include rem(padding-bottom, 82px);
+        }
+    }
+}
