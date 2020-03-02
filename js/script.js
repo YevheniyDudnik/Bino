@@ -1,6 +1,7 @@
 $(document).ready(function(){
     carouselHeader();
     scrollTop();
+    carouselSectionThird();
 });
 
 $(window).resize(function () {
@@ -22,7 +23,22 @@ function carouselHeader() {
         draggable: false,
         nextArrow: '<i class="fas fa-angle-right slick-next slick-arrow"></i>',
         prevArrow: '<i class="fas fa-angle-left slick-prev slick-arrow"></i>',
-        speed: 800
+        speed: 1500
+    });
+}
+
+// -- Slider options in section third -- //
+function carouselSectionThird() {
+    let headerCarousel = '.section-third-carousel';
+    $(headerCarousel).slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        draggable: false,
+        speed: 1500,
+        dots: true,
+        vertical: true,
     });
 }
 

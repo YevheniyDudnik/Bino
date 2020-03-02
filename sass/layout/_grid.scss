@@ -5,5 +5,12 @@ main {
         &-first-wrap {
             @include rem(padding-bottom, 82px);
         }
+
+        &-second-wrap {
+            @include rem((
+                padding-top: 141px,
+                padding-bottom: 66px
+            ));
+        }
     }
 }

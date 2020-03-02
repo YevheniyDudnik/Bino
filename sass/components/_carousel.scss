@@ -63,3 +63,11 @@
         }
     }
 }
+
+.section-third-carousel {
+    & > .slick {
+        &-list {
+            overflow-y: hidden;
+        }
+    }
+}

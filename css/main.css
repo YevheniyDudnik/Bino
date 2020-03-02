@@ -516,6 +516,10 @@ img {
     max-width: 1920px;
 }
 
+.row {
+    margin: 0 auto;
+}
+
 /* -- Lato -- */
 @font-face {
     font-family: 'lato-bold-italic';
@@ -668,6 +672,10 @@ img {
     right: 3%;
 }
 
+.section-third-carousel > .slick-list {
+    overflow-y: hidden;
+}
+
 .wrap-icons {
     max-width: 72px;
     max-height: 72px;
@@ -816,6 +824,13 @@ main {
 main .section-first-wrap {
     padding-bottom: 82px;
     padding-bottom: 5.125rem;
+}
+
+main .section-second-wrap {
+    padding-top: 141px;
+    padding-top: 8.8125rem;
+    padding-bottom: 66px;
+    padding-bottom: 4.125rem;
 }
 
 .header {
@@ -990,10 +1005,6 @@ main .section-first-wrap {
 }
 
 .section-second-wrap {
-    padding-top: 141px;
-    padding-top: 8.8125rem;
-    padding-bottom: 66px;
-    padding-bottom: 4.125rem;
     background-color: #f4f5f9;
 }
 
@@ -1080,6 +1091,52 @@ main .section-first-wrap {
         padding: 0 40px 80px;
         padding: 0 2.5rem 5rem;
     }
+}
+
+.section-third {
+    padding-top: 155px;
+    padding-top: 9.6875rem;
+    padding-right: 0;
+    padding-right: 0;
+    padding-bottom: 148px;
+    padding-bottom: 9.25rem;
+    padding-left: 49px;
+    padding-left: 3.0625rem;
+    position: relative;
+    max-width: 992px;
+}
+
+.section-third-wrap {
+    overflow: hidden;
+    background-color: #202020;
+}
+
+.section-third-title {
+    padding-right: 81px;
+    padding-right: 5.0625rem;
+    color: #f4f5f9;
+}
+
+.section-third-carousel-slide::after {
+    left: 992px;
+    left: 62rem;
+    max-width: 928px;
+    max-width: 58rem;
+    max-height: 768px;
+    max-height: 48rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url(../img/section-third-img.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 
 input::-webkit-input-placeholder {
@@ -1172,7 +1229,9 @@ input::placeholder {
 
 .navbar-expand-md .navbar-nav .nav-link.active::after, .navbar-expand-md .navbar-nav .nav-link:active::after, .navbar-expand-md .navbar-nav .nav-link:hover::after {
     position: absolute;
+    right: 0;
     bottom: 0;
+    left: 0;
     display: block;
     width: 100%;
     height: 1px;
