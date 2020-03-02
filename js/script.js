@@ -1,7 +1,7 @@
 $(document).ready(function(){
     carouselHeader();
     scrollTop();
-    carouselSectionThird();
+    // carouselSectionThird();
 });
 
 $(window).resize(function () {
@@ -28,19 +28,19 @@ function carouselHeader() {
 }
 
 // -- Slider options in section third -- //
-function carouselSectionThird() {
-    let headerCarousel = '.section-third-carousel';
-    $(headerCarousel).slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        draggable: false,
-        speed: 1500,
-        dots: true,
-        vertical: true,
-    });
-}
+// function carouselSectionThird() {
+//     let headerCarousel = '.section-third-carousel';
+//     $(headerCarousel).slick({
+//         infinite: true,
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         arrows: false,
+//         draggable: false,
+//         speed: 1500,
+//         dots: true,
+//         vertical: true,
+//     });
+// }
 
 // -- Deletion .show to header menu with resize -- //
 function deletionClassShow() {
