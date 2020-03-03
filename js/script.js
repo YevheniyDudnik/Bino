@@ -1,7 +1,7 @@
 $(document).ready(function(){
     carouselHeader();
     scrollTop();
-    // carouselSectionThird();
+    dotHeaderCarousel();
 });
 
 $(window).resize(function () {
@@ -27,21 +27,6 @@ function carouselHeader() {
     });
 }
 
-// -- Slider options in section third -- //
-// function carouselSectionThird() {
-//     let headerCarousel = '.section-third-carousel';
-//     $(headerCarousel).slick({
-//         infinite: true,
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         arrows: false,
-//         draggable: false,
-//         speed: 1500,
-//         dots: true,
-//         vertical: true,
-//     });
-// }
-
 // -- Deletion .show to header menu with resize -- //
 function deletionClassShow() {
     let collapsibleNavbar = '#collapsibleNavbar';
@@ -63,3 +48,24 @@ function scrollTop() {
     }
 }
 
+// -- Setting content to header carousel -- //
+function dotHeaderCarousel() {
+    let headerCarouselTitle = '.header-carousel-title';
+    let headerCarouselSubtitle = '.header-carousel-subtitle';
+    let headerCarouselText = '.header-carousel-text';
+    $(headerCarouselTitle).dotdotdot({
+        height: 117,
+    });
+    $(headerCarouselSubtitle).dotdotdot({
+        height: 69,
+    });
+    $(headerCarouselText).dotdotdot({
+        height: 117,
+    });
+    $(headerCarouselTitle, headerCarouselSubtitle, headerCarouselText).dotdotdot({
+        fallbackToLetter: true,
+        watch: true,
+        ellipsis: '...',
+        after: true,
+    });
+}
